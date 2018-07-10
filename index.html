@@ -1,57 +1,188 @@
-<!doctype html>
-<html lang="en-us">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
+  <title>GG | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Oswald|PT+Serif|Varela+Round' rel='stylesheet' type='text/css'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" type='text/css'>
 
-  <title>About | Griffin</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
 
-  <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Griffin Gaeth</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <!-- Navigation bar with the help of bootstrap -->
+
+  <ul class="nav justify-content-center nav-fixed-top">
+    <li class="nav-item">
+      <a class="nav-link active" href="#home">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#about">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#portfolio">Portfolio</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#contact">Contact</a>
+    </li>
+  </ul>
 
 
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>About Me</h1>
 
-      <img src="assets/images/griff.jpg" class="auth-image" alt="Your Name">
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et leo iaculis, auctor odio vel, tempus neque. Donec dolor nulla, vestibulum a arcu eu, sagittis porta velit. Vivamus congue velit eget imperdiet condimentum. Nunc non convallis nulla. Duis vitae gravida leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In vel ullamcorper enim. Nunc sagittis ipsum in ipsum aliquam, sit amet dapibus urna blandit.
-      </p>
-
-    </section>
-
-    <section class="sidebar">
-      <div id="connect">
-        <h2>Connect with Me</h2>
-
-        <a href="https://github.com/ggaeth"><img src="assets/images/github-128.png" class="social" alt="GitHub" /></a>
-        <a href="www.linkedin.com/in/griffin-gaeth"><img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn" /></a>
-        <a href="https://stackoverflow.com/users/9194954/ggaeth"><img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow" /></a>
+  <div id="home">
+    <div class="home-wrap text-center">
+      <h1 class="home-header">Griffin Gaeth</h1>
+      <h2>Full Stack Web Developer</h2>
+      <hr class="home-line">
+      <div class="home-buttons">
+        <a href="https://twitter.com/GaethGriffin" class="btn btn-default"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/griffin-gaeth/" class="btn btn-default"><i class="fa fa-linkedin"></i></a><a href="https://github.com/ggaeth" class="btn btn-default"><i class="fa fa-github"></i></a>
       </div>
-    </section>
-    <div class="push"></div>
+    </div>
   </div>
 
+  <div id="about">
+    <div class="container">
+      <div class="about-wrap text-center">
+        <h1>ABOUT ME</h1>
+        <hr class="line">
+        <div class="about-text">
 
-    <div class="footer">
-      Copyright &copy; 2018 Griffin Gaeth
+          <p> Lorem Ipsum.</p>
+          <p>Below you can see some of my work.</p>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Front-End Skills:</h3>
+            <ul class="skills-list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+              <li>Bootstrap</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h3>Back-End Skills:</h3>
+            <ul class="skills-list">
+              <li>NodeJS</li>
+              <li>MongoDB</li>
+              <li>MySQL</li>
+              <li>Git</li>
+            </ul>
+            <!-- col -->
+          </div>
+          <!-- row -->
+        </div>
+        <!-- about-wrap div -->
+      </div>
+      <!-- container div -->
     </div>
+    <!-- about div -->
+  </div>
+
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="portfolio-header text-center">PORTFOLIO</h1>
+      <hr class="line">
+      <div class="placeholder-box">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="placeholder-item">
+              <a href="https://ggaeth.github.io/Take-A-Hike/"><img src="https://i.gyazo.com/7b56d93d33012f344f4d8339be01fc52.jpg" alt="project"></a>
+              <p class="placeholder-desc">Take-A-Hike</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="placeholder-item">
+              <a href="https://ggaeth.github.io/TriviaGame/"><img src="https://i.gyazo.com/6132314de9e044accf3f82610aeb75b8.png" alt="project"></a>
+              <p class="placeholder-desc">TV Triva Game</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="placeholder-item">
+              <a href="#"><img src="https://i.gyazo.com/eada32f465b4be68908d9470ea6f969c.png" alt="project"></a>
+              <p class="placeholder-desc">Liri, the Node Siri®</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="placeholder-item">
+              <a href="#"><img src="https://i.gyazo.com/0ec87cdf269a1ec64b9f76cea8b6e02d.png" alt="Binge Watcher"></a>
+              <p class="placeholder-desc">Binge Watcher</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="placeholder-item">
+              <a href="#"><img src="https://i.gyazo.com/0ea8f1af9347dfb0bfe0e86a01770d55.png" alt="project"></a>
+              <p class="placeholder-desc">Multiplayer Rock-Paper-Scissors</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="placeholder-item">
+              <a href="#"><img src="https://i.gyazo.com/1b8a0cd202405c5a7ed923dc747a78fd.jpg" alt="project"></a>
+              <p class="placeholder-desc">GIF Searcher</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div id="contact">
+    <div class="container">
+      <div class="contact-wrap text-center">
+        <h1 class="contact-header">CONTACT</h1>
+        <hr class="contact-line">
+        <form method="post" action="#">
+          <div class="row">
+            <div class="col-md-12">
+              <input type="text" id="name" name="name" required="required" placeholder="John Doe" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <input type="email" id="email" name="email" placeholder="johndoe@example.com" required="required" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <textarea id="message" name="message" required="required" data-minlength="20"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <input type="submit" value="Submit" class="btn btn-default" id="submit-button" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <ul class="footer-menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </footer>
+
+
 
 </body>
 

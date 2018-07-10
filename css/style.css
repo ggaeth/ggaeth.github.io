@@ -1,0 +1,240 @@
+.nav {
+  background-color: #fff;
+}
+.nav>li>a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  color: #D16405;
+  font-size: 20px;
+  font-family: 'Varela Round', sans-serif;
+}
+
+
+
+
+
+
+/***** HOME *****/
+
+#home {
+background: white;
+  background-size: cover;
+  height: 680px;
+}
+
+.home-wrap {
+  padding-top: 140px;
+}
+
+.home-header {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 60px;
+  color: #5F6B77;
+}
+
+h2 {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 40px;
+  color: #5F6B77;
+}
+
+img {
+  width: 350px;
+  height: 150px;
+}
+
+.home-line {
+  border: 0;
+  height: 3px;
+  width: 90%;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #C9D255, rgba(0, 0, 0, 0));
+}
+
+.btn {
+  margin: 10px;
+  width: 100px;
+  border-radius: 5px;
+  background-color: #C9D255;
+  color: #fff;
+  border: none;
+  font-size: 25px;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #C9D255;
+}
+
+
+/***** ABOUT *****/
+
+#about {
+  background-color: #D16405;
+  color: #fff;
+  padding-bottom: 80px;
+}
+
+.about-wrap {
+  width: 60%;
+  margin: auto;
+  margin-top: 95px;
+}
+
+h1 {
+  font-family: 'Varela Round', sans-serif;
+  text-align: center;
+}
+h3 {
+  font-family: 'Varela Round', sans-serif;
+}
+
+.line {
+  margin-top: 30px;
+  width: 50%;
+  height: 2px;
+  background-color: #C9D255;
+  border: none;
+}
+
+.about-text {
+  font-size: 23px;
+  font-family: 'Varela Round', sans-serif;
+  text-align: justify;
+}
+
+.camp-link {
+  color: #fff;
+}
+
+.skills-list li {
+  font-size: 18px;
+  list-style-position: inside;
+  text-align: justify;
+  margin-left: 40px;
+  font-family: 'Varela Round', sans-serif;
+}
+
+
+/***** PORTFOLIO *****/
+
+#portfolio {
+  padding-top: 30px;
+  padding-bottom: 40px;
+  background-color: #C9D255;
+}
+
+.portfolio-header {
+  color: #5F6B77;
+}
+
+.placeholder-item {
+  margin-top: 40px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.placeholder-desc {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #5F6B77;
+  font-family: 'Varela Round', sans-serif;
+}
+
+img {
+  border: 2px solid #5F6B77;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.divider {
+  background-color: #D16405;
+  height: 3px;
+}
+
+
+/***** CONTACT *****/
+
+#contact {
+  background-color: #5F6B77;;
+  padding-top: 10px;
+  padding-bottom: 65px;
+}
+
+.contact-header {
+  font-family: 'Varela Round', sans-serif;
+  color: #fff;
+  font-size: 40px;
+}
+
+.contact-line {
+  background-color: #C9D255;
+  border: none;
+  height: 2px;
+  width: 40%;
+}
+
+.contact-wrap {
+  margin-top: 60px;
+}
+
+form {
+  margin-top: 50px;
+}
+
+input {
+  width: 40%;
+  height: 30px;
+  margin: 10px;
+}
+
+#message {
+  width: 40%;
+  height: 200px;
+  margin-top: 10px;
+}
+
+#submit-button {
+  width: 10%;
+  height: 40px;
+  font-family: 'Varela Round', sans-serif;
+}
+
+
+/***** FOOTER *****/
+
+footer {
+  background-color: #DADDE2;
+  height: 40px;
+  text-align: center;
+}
+
+.footer-menu {
+  margin-left: -30px;
+  text-align: center;
+}
+
+.footer-menu li {
+  display: inline;
+  margin: 10px;
+}
+
+.footer-menu li a {
+  text-decoration: none;
+  color: #D16405;
+  font-size: 20px;
+  font-family: 'Varela Round', sans-serif;
+ 
+}
+
+@media screen and (max-width: 1000px) {
+  .about-text {
+    font-size: 15px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  .skills-list li {
+    font-size: 15px;
+  }
+}
