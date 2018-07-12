@@ -7,12 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Fonts -->
-  <link href='https://fonts.googleapis.com/css?family=Oswald|PT+Serif|Varela+Round' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Oswald|PT+Serif|Varela+Round|Patua+One|Ubuntu' rel='stylesheet' type='text/css'>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" type='text/css'>
 
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+    crossorigin="anonymous">
+
   <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
   <link rel="stylesheet" href="css/style.css">
 
@@ -40,15 +41,27 @@
 
 
   <div id="home">
+      
     <div class="home-wrap text-center">
-      <h1 class="home-header">Griffin Gaeth</h1>
+        <div class="animation">
+      <h1 class="home-header">Hi, I'm Griffin Gaeth</h1>
       <h2>Full Stack Web Developer</h2>
+        </div>
       <hr class="home-line">
       <div class="home-buttons">
-        <a href="https://twitter.com/GaethGriffin" class="btn btn-default"><i class="fa fa-twitter"></i></a>
-        <a href="https://www.linkedin.com/in/griffin-gaeth/" class="btn btn-default"><i class="fa fa-linkedin"></i></a><a href="https://github.com/ggaeth" class="btn btn-default"><i class="fa fa-github"></i></a>
+        <a href="https://twitter.com/GaethGriffin" class="btn btn-default">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/griffin-gaeth/" class="btn btn-default">
+          <i class="fa fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/ggaeth" class="btn btn-default">
+          <i class="fa fa-github"></i>
+        </a>
       </div>
     </div>
+   
+    
   </div>
 
   <div id="about">
@@ -56,17 +69,24 @@
       <div class="about-wrap text-center">
         <h1>ABOUT ME</h1>
         <hr class="line">
+
         <div class="about-text">
 
-          <p> Lorem Ipsum.</p>
-          <p>Below you can see some of my work.</p>
+          <p>Throughout my life I've always had a love for computers, and an interest in how they work. At the age of 13 I created
+            my first game using Java. While studying for financial degeree in college, I came the the realization that I
+            was no longer chasing my own dreams. That's when I decided to try my hand at one my longest lasting passions,
+            computer and web development. I'm eager to see where this path takes me and continue to be happy doing what I
+            love. Dedicated to hard work ethic and the ability to stay organized while working on projects and tasks at hand,
+            I will continue to learn and develop new habits that shape me into a better full stack web developer.
+          </p>
         </div>
         <div class="row">
           <div class="col-md-6">
             <h3>Front-End Skills:</h3>
             <ul class="skills-list">
-              <li>HTML</li>
-              <li>CSS</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>React.Js</li>
               <li>Javascript</li>
               <li>Bootstrap</li>
             </ul>
@@ -78,6 +98,7 @@
               <li>MongoDB</li>
               <li>MySQL</li>
               <li>Git</li>
+              <li>Express</li>
             </ul>
             <!-- col -->
           </div>
@@ -90,55 +111,188 @@
     <!-- about div -->
   </div>
 
+
+
+  <!-- Portfolio Projects with modals -->
+
   <div id="portfolio">
     <div class="container">
-      <h1 class="portfolio-header text-center">PORTFOLIO</h1>
+      <h1 class="portfolio-header text-center">PORTFOLIO - Click an APP for information</h1>
       <hr class="line">
       <div class="placeholder-box">
+
         <div class="row">
           <div class="col-md-4">
             <div class="placeholder-item">
-              <a href="https://ggaeth.github.io/Take-A-Hike/"><img src="https://i.gyazo.com/7b56d93d33012f344f4d8339be01fc52.jpg" alt="project"></a>
+              <a href="#hike-modal" data-toggle="modal">
+                <img id="hike-image" src="https://i.gyazo.com/7b56d93d33012f344f4d8339be01fc52.jpg" alt="project">
+              </a>
               <p class="placeholder-desc">Take-A-Hike</p>
             </div>
           </div>
+          <!-- Take-A-Hike modal -->
+          <div class="modal fade" id="hike-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+
+                </div>
+                <div class="modal-body">
+                  <img src="https://i.gyazo.com/7b56d93d33012f344f4d8339be01fc52.jpg" id="imagepreview" style="width: 400px; height: 264px;">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default">Code</button>
+                    <button type="button" class="btn btn-default">Demo</button>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div class="col-md-4">
             <div class="placeholder-item">
-              <a href="https://ggaeth.github.io/TriviaGame/"><img src="https://i.gyazo.com/6132314de9e044accf3f82610aeb75b8.png" alt="project"></a>
+              <a href="#trivia-modal" data-toggle="modal">
+                <img id="trivia-image" src="https://i.gyazo.com/6132314de9e044accf3f82610aeb75b8.png" alt="project">
+              </a>
               <p class="placeholder-desc">TV Triva Game</p>
             </div>
           </div>
+          <!-- Trivia Game modal -->
+          <div class="modal fade" id="trivia-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+
+                </div>
+                <div class="modal-body">
+                  <img src="https://i.gyazo.com/6132314de9e044accf3f82610aeb75b8.png" id="imagepreview" style="width: 400px; height: 264px;">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default">Code</button>
+                    <button type="button" class="btn btn-default">Demo</button>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div class="col-md-4">
             <div class="placeholder-item">
-              <a href="#"><img src="https://i.gyazo.com/eada32f465b4be68908d9470ea6f969c.png" alt="project"></a>
+              <a href="#liri-modal" data-toggle="modal">
+                <img id="liri-image" src="https://i.gyazo.com/eada32f465b4be68908d9470ea6f969c.png" alt="project">
+              </a>
               <p class="placeholder-desc">Liri, the Node Siri®</p>
             </div>
           </div>
         </div>
+        <!-- Liri modal -->
+        <div class="modal fade" id="liri-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+
+              </div>
+              <div class="modal-body">
+                <img src="https://i.gyazo.com/eada32f465b4be68908d9470ea6f969c.png" id="imagepreview" style="width: 400px; height: 264px;">
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-default">Code</button>
+                  <button type="button" class="btn btn-default">Demo</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="row">
           <div class="col-md-4">
             <div class="placeholder-item">
-              <a href="#"><img src="https://i.gyazo.com/0ec87cdf269a1ec64b9f76cea8b6e02d.png" alt="Binge Watcher"></a>
-              <p class="placeholder-desc">Binge Watcher</p>
+              <a href="#pet-modal" data-toggle="modal">
+                <img id="pet-image" src="./img/petpurfect.jpg" alt="pet purfect">
+              </a>
+              <p class="placeholder-desc">Pet Purfect</p>
             </div>
           </div>
+          <!-- Pet Purfect modal -->
+          <div class="modal fade" id="pet-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+
+                </div>
+                <div class="modal-body">
+                  <img src="./img/petpurfect.jpg" id="imagepreview" style="width: 400px; height: 264px;">
+                </div>
+                <div class="modal-footer">
+                  <a href="https://github.com/ggaeth/pet-care-project" class="btn btn-info" role="button">Code</a>
+                  <a href="https://petpurfect.herokuapp.com/" class="btn btn-info" role="button">Demo</a>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div class="col-md-4">
             <div class="placeholder-item">
-              <a href="#"><img src="https://i.gyazo.com/0ea8f1af9347dfb0bfe0e86a01770d55.png" alt="project"></a>
+              <a href="#rps-modal" data-toggle="modal">
+                <img id="rps-image" src="https://i.gyazo.com/0ea8f1af9347dfb0bfe0e86a01770d55.png" alt="project">
+              </a>
               <p class="placeholder-desc">Multiplayer Rock-Paper-Scissors</p>
             </div>
           </div>
+          <!-- RPS Multi -->
+          <div class="modal fade" id="rps-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+
+                </div>
+                <div class="modal-body">
+                  <img src="https://i.gyazo.com/0ea8f1af9347dfb0bfe0e86a01770d55.png" id="imagepreview" style="width: 400px; height: 264px;">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default">Code</button>
+                    <button type="button" class="btn btn-default">Demo</button>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div class="col-md-4">
             <div class="placeholder-item">
-              <a href="#"><img src="https://i.gyazo.com/1b8a0cd202405c5a7ed923dc747a78fd.jpg" alt="project"></a>
+              <a href="#gif-modal" data-toggle="modal">
+                <img id="gif-image" src="https://i.gyazo.com/1b8a0cd202405c5a7ed923dc747a78fd.jpg" alt="project">
+              </a>
               <p class="placeholder-desc">GIF Searcher</p>
             </div>
           </div>
+          <!-- GIF Searcher -->
+          <div class="modal fade" id="gif-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                </div>
+                <div class="modal-body">
+                  <img src="https://i.gyazo.com/1b8a0cd202405c5a7ed923dc747a78fd.jpg" id="imagepreview" style="width: 400px; height: 264px;">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default">Code</button>
+                    <button type="button" class="btn btn-default">Demo</button>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
         </div>
       </div>
     </div>
   </div>
   </div>
+
+
 
   <div class="divider"></div>
 
@@ -147,41 +301,33 @@
       <div class="contact-wrap text-center">
         <h1 class="contact-header">CONTACT</h1>
         <hr class="contact-line">
-        <form method="post" action="#">
-          <div class="row">
-            <div class="col-md-12">
-              <input type="text" id="name" name="name" required="required" placeholder="John Doe" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <input type="email" id="email" name="email" placeholder="johndoe@example.com" required="required" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <textarea id="message" name="message" required="required" data-minlength="20"></textarea>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <input type="submit" value="Submit" class="btn btn-default" id="submit-button" />
-            </div>
-          </div>
-        </form>
+        <div class="image"></div>​
       </div>
     </div>
   </div>
 
   <footer>
     <ul class="footer-menu">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li>
+        <a href="#home">Home</a>
+      </li>
+      <li>
+        <a href="#about">About</a>
+      </li>
+      <li>
+        <a href="#portfolio">Portfolio</a>
+      </li>
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
     </ul>
   </footer>
 
+
+
+  <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
 
 
 </body>
